@@ -166,11 +166,15 @@ section,
 		transition: 0.3s;
 		@media screen and (max-width: $tableWidth) {
 			margin-left:0px;
+			&:hover {
+				border-bottom: 3px solid $mark-color;
+				background-color: $phon-light-color;
+			}
 		}
 		&:hover {
-            border-bottom: 3px solid $mark-color;
-            background-color: $phon-light-color;
+			border-bottom: 3px solid $mark-color;
 		}
+		
 	}
 	&__link {
 		color: $light-color;
